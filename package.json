@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
-    "client": "npm run start --prefix ./frontend/build/",
+    "client": "npm run start --prefix ./frontend",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
