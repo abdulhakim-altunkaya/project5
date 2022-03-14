@@ -1,18 +1,22 @@
 const express = require("express");
-const app = express();
+
+
 
 const connectDB = require ("./DB/connection");
 const ModelInput = require("./DB/schema");
 connectDB();
 
-
+const app = express();
 const path = require("path");
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
+
+
 app.use(express.static(path.join(__dirname, './frontend/build')));
+
 
 
 app.get("/test", function(req, res){
