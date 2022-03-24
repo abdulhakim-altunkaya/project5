@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.3ec4826f.css","mappings":"AAAA,KAIE,wBAA4B,CAF5B,mBAAoB,CAGpB,cAAe,CAJf,QAKF,CAGA,UANE,iBAQF","sources":["index.css"],"sourcesContent":["body {\n  margin: 0;\n  font-family: verdana;\n  text-align: center;\n  background-color: darkorange;\n  font-size: 35px;\n}\n\n\n.App {\n  text-align: center;\n}\n"],"names":[],"sourceRoot":""}

@@ -13,12 +13,13 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
-app.use('/', express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, './frontend/build')));
+
 
 
 
 /*
-asdfasdf
+app.use('/', express.static(path.join(__dirname, 'dist'))) -- DIDNT WORK
 app.use(express.static(path.join(__dirname, './frontend/public')));
 */
 /*
