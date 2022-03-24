@@ -13,10 +13,21 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
+app.use(express.static(path.join(__dirname, './frontend/build')));
 
 
-app.use(express.static(path.join(__dirname, '/frontend/public')));
 
+
+/*
+app.use(express.static(path.join(__dirname, './frontend/public')));
+*/
+/*
+const dir = path.join(__dirname, 'frontend');
+app.use(express.static(dir));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + "./frontend/src/index.js"))
+})
+*/
 
 
 app.get("/test", function(req, res){
