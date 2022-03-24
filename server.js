@@ -19,6 +19,7 @@ app.use(express.static(path.join(__dirname, './frontend/build')));
 
 
 /*
+asdfasdf
 app.use(express.static(path.join(__dirname, './frontend/public')));
 */
 /*
