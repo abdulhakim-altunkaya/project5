@@ -4,7 +4,7 @@ function Home() {
 
     const [myData, setMyData] = useState([]);
     useEffect(() => {
-      fetch("https://mern-project-2.herokuapp.com/test")
+      fetch("/test")
       .then(res => res.json())
       .then(result => {
         setMyData(result)

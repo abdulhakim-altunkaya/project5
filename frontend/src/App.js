@@ -10,8 +10,8 @@ function App() {
       <header className="App-header">
         <Router>
           <Routes>
-            <Route exact path="/" element={<Main  />} />
-            <Route exact path="/home" element={<Home  />} />
+            <Route path="/" element={<Main  />} />
+            <Route path="/home" element={<Home  />} />
             <Route exact path="/articles" element={<Articles  />} />
             <Route exact path="/about" element={<About />} />
           </Routes>

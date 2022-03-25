@@ -45,10 +45,10 @@ app.get("/", (req, res) => {
 
 app.get("/test", function(req, res){
     const str = [{
-      id: "0",
-      name: "schwan",
-      city: "midyat",
-      age: "something"
+      "id": "0",
+      "name": "schwan",
+      "city": "midyat",
+      "age": "something"
     }]
     res.end(JSON.stringify(str));
 });
