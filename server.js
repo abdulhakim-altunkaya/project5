@@ -16,12 +16,14 @@ app.use(express.json());
 
 
 
-app.use(express.static(path.join(__dirname, 'frontend/build')))
+app.use(express.static(path.join(__dirname, './frontend/build')))
 
 
 
 /*
-app.use(express.static('/frontend/build'));
+app.use(express.static(path.join(__dirname, 'frontend/build'))) -- DIDNT WORK
+app.use(express.static(path.join(__dirname, '/frontend/build'))) -- DIDNT WORK
+app.use(express.static('/frontend/build')); -- DIDNT WORK
 app.use(express.static(path.join(__dirname, './frontend/build')));
 app.use('/', express.static(path.join(__dirname, 'dist'))) -- DIDNT WORK
 app.use(express.static(path.join(__dirname, './frontend/public')));
