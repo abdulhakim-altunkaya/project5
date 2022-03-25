@@ -16,13 +16,14 @@ app.use(express.json());
 
 if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
-  app.use(express.static('frontend/build'));
+  app.use(express.static('./frontend/build'));
 
   // Express serve up index.html file if it doesn't recognize route
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, './frontend/', 'build', 'index.html'));
   });
 }
+
 
 
 
@@ -45,10 +46,10 @@ app.get("/", (req, res) => {
 
 app.get("/test", function(req, res){
     const str = [{
-      "id": "0",
-      "name": "schwan",
-      "city": "midyat",
-      "age": "something"
+      id: "0",
+      name: "schwan",
+      city: "midyat",
+      age: "something"
     }]
     res.end(JSON.stringify(str));
 });
