@@ -5,7 +5,7 @@ function Home() {
     const [myData, setMyData] = useState([]);
     useEffect(() => {
       fetch("/test")
-      .then(res => res.json())
+      .then(res => res.text())
       .then(result => {
         setMyData(result)
       })
